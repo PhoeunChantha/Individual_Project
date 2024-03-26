@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-   
+
     public function up(): void
     {
         Schema::create('reservations', function (Blueprint $table) {
@@ -25,8 +25,6 @@ return new class extends Migration
             $table->foreign('customerid')->references('customerid')->on('customers');
         });
     }
-
-
     public function down(): void
     {
         Schema::dropIfExists('reservations');

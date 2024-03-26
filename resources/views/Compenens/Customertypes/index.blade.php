@@ -1,7 +1,5 @@
 @extends('Compenens.Dashboard')
 @section('content')
-
-
 <div class="card">
     <div class="card-body">
         <h6 class="card-title">Customer Type list</h6>
@@ -23,7 +21,7 @@
                         <tr>
                             <td>{{ $item->customertypeid }}</td>
                             <td>{{ $item->customertypename }}</td>
-                            <td><button class="btn btn-primary btn-sm"> <a  class="text-white"
+                            <td><button class="btn btn-primary "> <a  class="text-white"
                                 href="{{route('customertype.edit', $item->customertypeid)}}">
                               Edit
                             </a> </button>
